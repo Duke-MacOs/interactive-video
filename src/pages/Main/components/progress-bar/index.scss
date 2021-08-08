@@ -1,0 +1,28 @@
+.progress-container {
+  overflow-x: scroll;
+}
+.progress-bar {
+  height: 50px;
+  padding-left: 160px;
+  background: #1d1d1d;
+  .main {
+    position: relative;
+    height: 100%;
+  }
+}
+.vernier-container {
+  position: fixed;
+  width: 1px;
+  height: 999px;
+  background: $color-cyan;
+  z-index: 9;
+  .vernier-time {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 60px;
+    height: 14px;
+    font-size: 11px;
+    background: $color-cyan;
+  }
+}

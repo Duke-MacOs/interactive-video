@@ -1,0 +1,141 @@
+.batch-update-node-modal {
+  .ant-modal-header {
+    padding: 17px 20px;
+    .ant-modal-title {
+      font-size: 13px;
+    }
+  }
+  .ant-modal-close {
+    display: none;
+  }
+  .ant-modal-body {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    font-size: 12px;
+    user-select: none;
+  }
+  .batch-update {
+    &-title {
+      color: yellow;
+    }
+    &-sub-title {
+      margin-top: 10px;
+      height: 28px;
+      line-height: 28px;
+      color: #fff;
+      opacity: 0.6;
+      &.move-title {
+        margin-top: 24px;
+      }
+    }
+  }
+  .all-select-wrap {
+    margin: 10px 0 5px;
+    display: inline-block;
+    input {
+      margin-bottom: 2px;
+      vertical-align: middle;
+    }
+    span {
+      margin-left: 4px;
+    }
+  }
+  .interact-node-list {
+    margin-top: -8px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    &-item {
+      position: relative;
+      margin-top: 16px;
+      display: inline-block;
+      width: 140px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 4px;
+      background: #3c3d3f;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      input[type='checkbox'] {
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        border-radius: 2px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        width: 16px;
+        height: 16px;
+        background-color: #3c3d3f;
+        -webkit-appearance: none;
+        outline: none;
+      }
+      input[type='checkbox']:checked {
+        -webkit-appearance: auto;
+      }
+    }
+    &-icon {
+      margin-top: -2px;
+      width: 18px;
+      height: 18px;
+    }
+    &-desc {
+      margin: 0 4px;
+    }
+  }
+  .move-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    height: 45px;
+    .move-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 22px;
+      line-height: 22px;
+      .move-radio {
+        width: 16px;
+        height: 16px;
+      }
+      .move-desc {
+        display: inline-block;
+        margin: 0 8px;
+        height: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+
+.segment-node-modal {
+  .item-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    max-height: 450px;
+    overflow-y: scroll;
+    .item {
+      position: relative;
+      margin-bottom: 10px;
+      .selected {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 32px;
+      }
+    }
+  }
+}
+.short-cut-modal {
+  .ant-modal-title {
+    text-align: center;
+  }
+  .short-cut-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 44px;
+  }
+}

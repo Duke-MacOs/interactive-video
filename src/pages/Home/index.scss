@@ -1,0 +1,109 @@
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 18px 26px 26px 26px;
+  overflow-y: scroll;
+  .home-header {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    h2 {
+      margin-bottom: 0;
+      padding-left: 5px;
+    }
+    &-desc {
+      margin-bottom: 16px;
+      height: 13px;
+      line-height: 13px;
+      span {
+        display: inline-block;
+        letter-spacing: 3px;
+        font-size: 12px;
+        // font-size: 9 缩放
+        transform: scale(0.75);
+      }
+    }
+  }
+}
+.body {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-drop {
+  flex: 1;
+  background: #262629;
+  border-radius: 10px;
+  .icon-drag {
+    width: 60px;
+    height: 60px;
+  }
+  .title {
+    font-size: 18px;
+    color: $color-white;
+  }
+  .text {
+    font-size: 13px;
+    color: $color-gray;
+  }
+  .choose {
+    cursor: pointer;
+    color: #1283ff;
+  }
+  &.home-drop-wait {
+    background: gray;
+  }
+  &.home-drop-large {
+    height: 600px;
+  }
+  &.home-drop-small {
+    height: 250px;
+  }
+}
+
+.recent-list {
+  margin-top: 30px;
+  .recent-text {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ant-btn.active svg {
+      color: #1283ff !important;
+    }
+    .ant-btn.no-active svg {
+      color: #fff !important;
+    }
+  }
+  .flex-boxs {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    div {
+      margin-right: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+      }
+      span {
+        width: 150px;
+      }
+      .name {
+        opacity: 0.8;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .time {
+        text-align: left;
+        opacity: 0.4;
+        font-size: small;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

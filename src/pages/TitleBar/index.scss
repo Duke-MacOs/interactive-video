@@ -1,0 +1,11 @@
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50px;
+  color: gray;
+  font-size: 12px;
+}

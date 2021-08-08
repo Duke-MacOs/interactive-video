@@ -1,0 +1,60 @@
+.time-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 22px;
+  line-height: 22px;
+  .time-split {
+    margin: 0 2px;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .time-selector-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    text-align: center;
+    height: 30px;
+    background-color: #090a0d;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    &::after {
+      position: absolute;
+      top: -12px;
+      left: 5px;
+      content: '时/分/秒';
+      font-size: 12px;
+    }
+    &::before {
+      position: absolute;
+      top: -12px;
+      left: 3px;
+      content: '';
+      width: 52px;
+      height: 12px;
+      background-color: #1d1d1d;
+    }
+    .move-time-selector {
+      width: 95%;
+      background: #090a0d;
+      text-align: center;
+      border: none;
+    }
+    .ant-select-selector {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  .millisecond-wrap {
+    width: 60px;
+    &::after {
+      content: '毫秒';
+    }
+    &::before {
+      width: 28px;
+    }
+  }
+}
